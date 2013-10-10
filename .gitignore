@@ -1,0 +1,6 @@
+*.pyc
+*.tgz
+*.zip
+02-cassandra/apache-cassandra-2.0.1/
+03-spark/spark-0.8.0-incubating-bin-hadoop1
+04-elasticsearch/elasticsearch-0.90.5
