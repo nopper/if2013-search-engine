@@ -4,8 +4,8 @@ You need to have [elasticsearch](http://www.elasticsearch.org/) up and
 running on your machine. You can install it by following the
 instructions:
 
-    $ wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.5.zip
-    $ unzip elasticsearch-0.90.5.zip
+    $ wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.3.4.zip
+    $ unzip elasticsearch-1.3.4.zip
 
 I highly suggest you to install the `head` plugin, by typing:
 
@@ -14,7 +14,7 @@ I highly suggest you to install the `head` plugin, by typing:
 
 Now you can start your indexing server:
 
-    $ bin/elasticsearch -f
+    $ bin/elasticsearch
 
 Time to point your web browser on the [head plugin](http://localhost:9200/_plugin/head/).
 
