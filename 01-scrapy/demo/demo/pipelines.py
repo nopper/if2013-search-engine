@@ -3,6 +3,7 @@ from pycassa.pool import ConnectionPool
 
 from urlparse import urlparse
 
+
 class CassandraPipeline(object):
     def __init__(self):
         self.pool = ConnectionPool("demo", "127.0.0.1")

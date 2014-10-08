@@ -1,8 +1,8 @@
-from scrapy.item import Item, Field
+import scrapy
 
-class Page(Item):
-    title = Field()
-    url = Field()
-    desc = Field()
-    links = Field()
 
+class Page(scrapy.Item):
+    title = scrapy.Field()
+    url = scrapy.Field()
+    desc = scrapy.Field()
+    links = scrapy.Field()

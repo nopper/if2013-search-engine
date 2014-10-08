@@ -1,6 +1,6 @@
 # Requirements
 
-    $ pip install scrapy
+    $ pip install scrapy service_identity
     $ pip install ipython # optional
     $ pyenv rehash
 
@@ -8,3 +8,5 @@
 
     $ scrapy shell http://it.wikipedia.org/wiki/Premio_Nobel
     ...
+
+    $ scrapy crawl wikipedia
