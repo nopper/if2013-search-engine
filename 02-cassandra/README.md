@@ -1,26 +1,15 @@
 # Requirements
 
 You need to have [cassandra](http://cassandra.apache.org/) possibly the
-`2.0.1` release up and running on your box. To do so:
+`2.1.0` release up and running on your box. To do so:
 
-    $ wget http://apache.fastbull.org/cassandra/2.0.1/apache-cassandra-2.0.1-bin.tar.gz
-    $ tar xvfz apache-cassandra-2.0.1-bin.tar.gz
+    $ wget http://apache.fastbull.org/cassandra/2.1.0/apache-cassandra-2.1.0-bin.tar.gz
+    $ tar xvfz apache-cassandra-2.1.0-bin.tar.gz
 
 You need to create some directories that will be used to hold your data:
 
+    $ cd apache-cassandra-2.1.0
     $ mkdir -p data/{data,commitlog,saved_caches}
-
-Then you need to modify the configuration file `cassandra.yaml`, making
-sure that the variables below point to a valid path:
-
-- `data_file_directories` (default value: `/var/lib/cassandra/data`)
-- `commitlog_directory` (default value: `/var/lib/cassandra/commitlog`)
-- `saved_caches_directory` (default value: `/var/lib/cassandra/saved_caches`)
-
-The same should be done for the `log4j-server.properties` file that
-contains the variable:
-
-- `log4j.appender.R.File`  (default value: `/var/log/cassandra/system.log`)
 
 After that you can start your server with:
 
